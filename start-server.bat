@@ -10,7 +10,7 @@ set InstallPath=C:\servers\scum
 "%SteamCMDPath%\steamcmd.exe" +force_install_dir "%InstallPath%" +login anonymous +app_update 3792580 validate +quit
 
 cd /d "%ServerPath%"
-start SCUMServer.exe -log -nobattleye
+start SCUMServer.exe -log 
 
 :: Additional startup arguments:
 ::
