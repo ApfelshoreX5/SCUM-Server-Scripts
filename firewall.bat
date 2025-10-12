@@ -19,7 +19,7 @@ netsh advfirewall firewall add rule name="SCUM Server Port" dir=in action=allow 
 netsh advfirewall firewall add rule name="SCUM Client Port" dir=in action=allow protocol=TCP localport=7779
 
 :: ICMP
-netsh advfirewall firewall add rule name="Allow ICMPv4 Echo Request" dir=in action=allow protocol=ICMPv4 localport=any 
+netsh advfirewall firewall add rule name="Allow ICMPv4 Echo Request" dir=in action=allow protocol=icmpv4 
 
 echo.
 echo Ports opened successfully.
